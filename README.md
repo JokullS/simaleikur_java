@@ -1,1 +1,0 @@
-# simaleikur_java
