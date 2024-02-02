@@ -19,3 +19,9 @@ function togglefullScreen(){
 
 }
 fullScreenButton.addEventListener('click', togglefullScreen);
+
+screen.orientation.addEventListener("change", (event) => {
+    const type = event.target.type;
+    const angle = event.target.angle;
+    console.log(`ScreenOrientation change: ${type}, ${angle} degrees.`);
+  });
